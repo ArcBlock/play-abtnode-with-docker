@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    abtnode:
+        image: arcblock/abtnode
+        restart: always
+        ports:
+            - '80:80'
+            - '443:443'
+        volumes:
+            - .:/data/abtnode
