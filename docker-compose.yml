@@ -3,7 +3,6 @@ version: '3'
 services:
     abtnode:
         image: arcblock/abtnode
-        restart: always
         ports:
             - '80:80'
         volumes:
