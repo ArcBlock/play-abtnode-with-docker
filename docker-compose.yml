@@ -6,6 +6,8 @@ services:
         restart: always
         ports:
             - '80:80'
-            - '443:443'
         volumes:
-            - .:/data/abtnode
+            - abtnode-data:/data/abtnode
+
+volumes:
+    abtnode-data:
